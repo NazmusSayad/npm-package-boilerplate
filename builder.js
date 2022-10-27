@@ -39,6 +39,7 @@ let __dirname=______file___URL___To___Path______(new URL('.',import.meta.url));
   }
 
   cleanBuild() {
+    if (!fs.existsSync(this.outputDir)) return
     const list = fs.readdirSync(this.outputDir)
     list.forEach((item) => {
       fs.rmSync(path.join(this.outputDir, item), {
