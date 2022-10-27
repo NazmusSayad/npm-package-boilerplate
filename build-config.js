@@ -25,9 +25,6 @@ let __dirname=______file___URL___To___Path______(new URL('.',import.meta.url));
     this.cjsCmd = this.#getCommand(this.cjsCmd)
     this.mjsCmd = this.#getCommand(this.mjsCmd)
 
-    this.readmeFile = path.resolve(this.readmeFile)
-    this.readmeOutFile = path.resolve(this.packageDir, this.readmeOutFile)
-
     this.packageDir = path.resolve(this.packageDir)
     this.cjsBuildDir = path.join(this.packageDir, this.cjsBuildDir)
     this.mjsBuildDir = path.join(this.packageDir, this.mjsBuildDir)

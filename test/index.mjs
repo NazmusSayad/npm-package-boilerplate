@@ -1,5 +1,5 @@
 console.clear()
-import local from '../package/build/mjs/index.js'
+import local from '../package/mjs/index.js'
 console.log({ local })
 
 console.log('-----------------------')

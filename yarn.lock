@@ -2,22 +2,22 @@
 # yarn lockfile v1
 
 
-"@nazmussayad/npm@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@nazmussayad/npm/-/npm-0.0.3.tgz#489afd1f9ab64e9addb2302a2dfab812c7738f4f"
-  integrity sha512-/zKrmDzYmwWXVeqYE/dgoEpgjyPaV5Ay9VeA2ovoPWdRzL1IHbYRkL69gfLfdF7FRL+I2oEVl45HZi0/Sl21rA==
+"@nazmussayad/npm@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@nazmussayad/npm/-/npm-0.0.7.tgz#8a88255fb70d176af970ca7b0d7d4ab5c4ae5871"
+  integrity sha512-DeHL00p9EErtJKKbVHGz5055b5HZnfkx6BHw+nZ+VPtZlwdSjMWoKfvBdUaSwsCF6Igu/KwahGEmYMi5qjfYwA==
 
-"@types/node@^18.11.6":
-  version "18.11.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.6.tgz#4f91b0b30d405fdf76e0029b11ef5df6a0da4261"
-  integrity sha512-j3CEDa2vd96K0AXF8Wur7UucACvnjkk8hYyQAHhUNciabZLDl9nfAEVUSwmh245OOZV15bRA3Y590Gi5jUcDJg==
+"@types/node@latest":
+  version "18.11.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.7.tgz#8ccef136f240770c1379d50100796a6952f01f94"
+  integrity sha512-LhFTglglr63mNXUSRYD8A+ZAIu5sFqNJ4Y2fPuY7UlrySJH87rRRlhtVmMHplmfk5WkoJGmDjE9oiTfyX94CpQ==
 
-node-ls-files@^0.0.1:
+node-ls-files@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/node-ls-files/-/node-ls-files-0.0.1.tgz#05ab8d91a55b14f4d281ce938aafe3b10233aac5"
   integrity sha512-Ng1cGtxC1axbHsn6eoDdJMfBgod1pKaebWsIcSGAuP2oSk7+JnZXzbLmvXI8ZVNADnCWnwTytH+57ngv/xHGqA==
 
-typescript@^4.8.4:
+typescript@latest:
   version "4.8.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.4.tgz#c464abca159669597be5f96b8943500b238e60e6"
   integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==

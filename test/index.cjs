@@ -1,5 +1,5 @@
 console.clear()
-const { default: local } = require('../package/build/cjs/index.js')
+const { default: local } = require('../package/cjs/index.js')
 console.log({ local })
 
 console.log('-----------------------')

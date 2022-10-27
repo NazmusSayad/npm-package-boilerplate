@@ -15,7 +15,7 @@ class Build extends BuildConfig {
   }
 
   cleanBuild() {
-    const list = [this.mjsBuildDir, this.cjsBuildDir, this.readmeOutFile]
+    const list = [this.mjsBuildDir, this.cjsBuildDir]
 
     list.forEach((item) => {
       if (fs.existsSync(item)) {
@@ -25,10 +25,9 @@ class Build extends BuildConfig {
   }
 
   copyFiles() {
-    fs.copyFileSync(this.readmeFile, path.join(this.packageDir, './README.md'))
-
-    this.addPackageData(this.mjsBuildDir, 'module')
+    this.addPackageData(this.packageDir, 'commonjs')
     this.addPackageData(this.cjsBuildDir, 'commonjs')
+    this.addPackageData(this.mjsBuildDir, 'module')
   }
 
   runMjsBuild() {
