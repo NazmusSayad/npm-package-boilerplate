@@ -14,7 +14,7 @@ class Build {
   readmeFile = './README.md'
   readmeOutFile = './README.md'
 
-  packageDir = './package'
+  packageDir = './dist'
   mjsBuildDir = './mjs'
   cjsBuildDir = './cjs'
 
