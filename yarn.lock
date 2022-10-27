@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@nazmussayad/npm@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@nazmussayad/npm/-/npm-0.1.0.tgz#c67474d8db28e4014db8b854895c4ff499a782eb"
-  integrity sha512-4aCovHFKyHtxEmMUapXMOZjGUOg8bS6RAuOXAR8nupakQ66CGJdBFktOs6urCfjEszoQDpM/vLLdpbrPm469nw==
+"@nazmussayad/npm@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@nazmussayad/npm/-/npm-0.1.6.tgz#b894658f1c376e9867fb788814f68505fd7146db"
+  integrity sha512-+gYzeStIxoQgXHe0FhJl55DkJ+M6d+xcKxGRK0xQlIwGpBcVA1nuo1l2IGikIlwD5ehlYfdz4SHXOhfaaKi/4g==
 
 "@types/node@latest":
   version "18.11.7"

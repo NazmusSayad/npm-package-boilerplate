@@ -11,12 +11,9 @@ class Build {
   cjsCmd = 'tsconfig-cjs.json'
   mjsCmd = 'tsconfig-mjs.json'
 
-  readmeFile = './README.md'
-  readmeOutFile = './README.md'
-
-  packageDir = './dist'
-  mjsBuildDir = './mjs'
-  cjsBuildDir = './cjs'
+  outputDir = './dist'
+  mjsDir = './mjs'
+  cjsDir = './cjs'
 
   __nodeCode = `// CommonJs module feature 
 import{fileURLToPath as ______file___URL___To___Path______}from'url';
@@ -28,9 +25,9 @@ let __dirname=______file___URL___To___Path______(new URL('.',import.meta.url));
     this.cjsCmd = this.#getCommand(this.cjsCmd)
     this.mjsCmd = this.#getCommand(this.mjsCmd)
 
-    this.packageDir = path.resolve(this.packageDir)
-    this.cjsBuildDir = path.join(this.packageDir, this.cjsBuildDir)
-    this.mjsBuildDir = path.join(this.packageDir, this.mjsBuildDir)
+    this.outputDir = path.resolve(this.outputDir)
+    this.cjsDir = path.join(this.outputDir, this.cjsDir)
+    this.mjsDir = path.join(this.outputDir, this.mjsDir)
   }
 
   build() {
@@ -42,7 +39,7 @@ let __dirname=______file___URL___To___Path______(new URL('.',import.meta.url));
   }
 
   cleanBuild() {
-    const list = [this.mjsBuildDir, this.cjsBuildDir]
+    const list = [this.mjsDir, this.cjsDir]
 
     list.forEach((item) => {
       if (fs.existsSync(item)) {
@@ -52,9 +49,9 @@ let __dirname=______file___URL___To___Path______(new URL('.',import.meta.url));
   }
 
   copyFiles() {
-    this.addPackageData(this.packageDir, 'commonjs')
-    this.addPackageData(this.cjsBuildDir, 'commonjs')
-    this.addPackageData(this.mjsBuildDir, 'module')
+    this.addPackageData(this.outputDir, 'commonjs')
+    this.addPackageData(this.cjsDir, 'commonjs')
+    this.addPackageData(this.mjsDir, 'module')
   }
 
   runCjsBuild() {
@@ -64,7 +61,7 @@ let __dirname=______file___URL___To___Path______(new URL('.',import.meta.url));
   runMjsBuild() {
     cmd.execSync(this.mjsCmd)
 
-    const files = lsFiles.sync(this.mjsBuildDir, {
+    const files = lsFiles.sync(this.mjsDir, {
       filter: /\.m?js$/,
     })
     files.forEach((file) => this.prepend__nodeCode(file))
