@@ -1,6 +1,6 @@
 {
   "name": "@nazmussayad/npm",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "npm-package-boilerplate",
   "main": "./dist/mjs/index.js",
   "types": "./dist/mjs/index.d.js",
@@ -14,7 +14,7 @@
     "cjs": "nodemon test/index.cjs",
     "mjs": "nodemon test/index.mjs",
     "pkg": "yarn add -D @nazmussayad/npm@latest",
-    "dev": "tsc -p tsconfig-cjs.json -w",
+    "dev": "node setup.js && tsc -p tsconfig-cjs.json -w",
     "build": "node build.js",
     "update": "node update.js"
   },
