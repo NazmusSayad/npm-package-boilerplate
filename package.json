@@ -1,6 +1,6 @@
 {
   "name": "@nazmussayad/npm",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "npm-package-boilerplate",
   "main": "./package/mjs/index.js",
   "types": "./package/mjs/index.d.js",
@@ -15,11 +15,12 @@
     "mjs": "nodemon test/index.mjs",
     "dev": "tsc -p tsconfig-cjs.json -w",
     "l": "yarn add -D @nazmussayad/npm@latest",
-    "build": "node build.js"
+    "build": "node build.js",
+    "update": "node update.js"
   },
   "dependencies": {},
   "devDependencies": {
-    "@nazmussayad/npm": "^0.0.7",
+    "@nazmussayad/npm": "^0.1.0",
     "@types/node": "latest",
     "node-ls-files": "0.0.1",
     "typescript": "latest"
