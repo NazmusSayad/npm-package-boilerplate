@@ -1,0 +1,27 @@
+{
+  "name": "@nazmussayad/npm",
+  "version": "0.0.3",
+  "description": "npm-package-boilerplate",
+  "main": "./mjs/index.js",
+  "types": "./mjs/index.d.js",
+  "exports": {
+    ".": {
+      "require": "./cjs/index.js",
+      "import": "./mjs/index.js"
+    }
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "type": "commonjs",
+  "license": "ISC",
+  "author": "https://github.com/NazmusSayad",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazmusSayad/npm-package-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NazmusSayad/npm-package-boilerplate/issues"
+  },
+  "homepage": "https://github.com/NazmusSayad/npm-package-boilerplate#readme"
+}

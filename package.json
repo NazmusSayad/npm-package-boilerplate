@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "cjs": "nodemon test/index.cjs",
+    "mjs": "nodemon test/index.mjs",
+    "dev": "tsc -p tsconfig-cjs.json -w",
+    "test": "yarn add -D @nazmussayad/npm@latest",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "@nazmussayad/npm": "^0.0.3",
+    "@types/node": "^18.11.6",
+    "node-ls-files": "^0.0.1",
+    "typescript": "^4.8.4"
+  }
+}
