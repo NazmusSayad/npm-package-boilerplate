@@ -5,13 +5,6 @@ class BuildConfig {
     return `tsc -p ${path}`
   }
 
-  lsFilesConfig = {
-    relative: true,
-    separator: '/',
-    prefix: './',
-    filter: /\.((m|c)?js|d\.(m|c)?ts)$/,
-  }
-
   cjsCmd = 'tsconfig-cjs.json'
   mjsCmd = 'tsconfig-mjs.json'
 
