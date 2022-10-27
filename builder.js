@@ -39,12 +39,12 @@ let __dirname=______file___URL___To___Path______(new URL('.',import.meta.url));
   }
 
   cleanBuild() {
-    const list = [this.mjsDir, this.cjsDir]
-
+    const list = fs.readdirSync(this.outputDir)
     list.forEach((item) => {
-      if (fs.existsSync(item)) {
-        fs.rmSync(item, { recursive: true, force: true })
-      }
+      fs.rmSync(path.join(this.outputDir, item), {
+        recursive: true,
+        force: true,
+      })
     })
   }
 

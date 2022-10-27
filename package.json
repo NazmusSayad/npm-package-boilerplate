@@ -1,6 +1,6 @@
 {
   "name": "@nazmussayad/npm",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "npm-package-boilerplate",
   "main": "./dist/mjs/index.js",
   "types": "./dist/mjs/index.d.js",
