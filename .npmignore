@@ -1,4 +1,6 @@
 *
 !dist/**
-!dist.json
+!assets/**
+!public/**
+!package.json
 !README.md
